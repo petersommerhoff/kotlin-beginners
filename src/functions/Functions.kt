@@ -11,7 +11,7 @@ fun helloWorld() {
 // 1 parameter, no return value
 fun printWithSpaces(text: String) {
     for (char in text) {
-        print(char + " ")
+        print("$char ")
     }
     println()
 }
@@ -23,10 +23,10 @@ fun getCurrentDate(): Date {
 
 // 2 parameters, returns Int
 fun max(a: Int, b: Int): Int {
-    if (a >= b) {
-        return a
+    return if (a >= b) {
+        a
     } else {
-        return b
+        b
     }
 }
 
